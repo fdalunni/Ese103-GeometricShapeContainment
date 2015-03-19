@@ -13,14 +13,10 @@ public class Ese103
 		c[2] = new Circle(80, 40, 80);
 		controlContainment(c[0], c[1]);
 		controlContainment(c[0], c[2]);
-		controlContainment(c[0], c[3]);
 		controlContainment(c[1], c[0]);
 		controlContainment(c[1], c[2]);
-		controlContainment(c[1], c[3]);
 		controlContainment(c[2], c[0]);
 		controlContainment(c[2], c[1]);
-		controlContainment(c[2], c[3]);
-		
 		System.out.println();
 	}
 	
