@@ -52,9 +52,9 @@ public class Ese103
 	private static void controlContainment(Triangle t1, Triangle t2)
 	{
 		if(t1.contains(t2))
-			System.out.println(t1 + " contiene " + t2);
+			System.out.println(t1 + " contiene --->" + t2);
 		else
-			System.out.println(t1 + " non contiene " + t2);
+			System.out.println(t1 + " non contiene --->" + t2);
 	}
 	
 	
