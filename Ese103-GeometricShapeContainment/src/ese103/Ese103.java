@@ -23,6 +23,7 @@ public class Ese103
 		System.out.println("\n==> Verifica contains");
 		GeometricShape shapeArray[] =  new GeometricShape[4];
 		
+		
 		shapeArray[0] = new Circle(0, 0, 1);
 		shapeArray[1] = new Rectangle(0, 0, 3, 2);
 		shapeArray[2] = new Square(0, 0, 1);
