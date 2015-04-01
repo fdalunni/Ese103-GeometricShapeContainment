@@ -30,9 +30,11 @@ public class Ese103
 		
 		GeometricShape a, b;
 		
-		for(int i=0; i<shapeArray.length; i++) {
+		for(int i=0; i<shapeArray.length; i++) 
+		{
 			a = shapeArray[i];
-			for(int j=0; j<shapeArray.length; j++) {
+			for(int j=0; j<shapeArray.length; j++) 
+			{
 				b = shapeArray[j];
 				if(a != b) {
 					if(a.contains(b))
@@ -52,11 +54,12 @@ public class Ese103
 		System.out.print("11: Verifica implementazione costruttore di Triangle...");
 		try {
 			t = new Triangle(0, 0, 0);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di Costruttore di Triangle");
 		}
-		catch(IllegalArgumentException e) {
+		catch(IllegalArgumentException e) 
+		{
 			System.out.println("superata");
 		}
 		
@@ -86,9 +89,10 @@ public class Ese103
 		
 		// Verifica di eccezione in setL
 		System.out.print("14: Verifica implementazione setL di Triangle...");
-		try {
+		try 
+		{
 			t.setL(-1);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di setL");
 		}
@@ -104,13 +108,15 @@ public class Ese103
 
 		System.out.println("\n==> Verifica Circle");
 		System.out.print("01: Verifica implementazione costruttore di Circle...");
-		try {
+		try 
+		{
 			c = new Circle(0, 0, 0);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di Costruttore");
 		}
-		catch(IllegalArgumentException e) {
+		catch(IllegalArgumentException e) 
+		{
 			System.out.println("superata");
 		}
 		
@@ -140,13 +146,15 @@ public class Ese103
 		
 		// Verifica di eccezione in setR
 		System.out.print("04: Verifica implementazione setR di Circle...");
-		try {
+		try 
+		{
 			c.setR(-1);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di setR");
 		}
-		catch(IllegalArgumentException e) {
+		catch(IllegalArgumentException e)
+		{
 			System.out.println("superata");
 		}
 	}
@@ -159,7 +167,7 @@ public class Ese103
 		System.out.print("21a: Verifica implementazione costruttore di Rectangle...");
 		try {
 			r = new Rectangle(0, 0, 0, 1);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di Costruttore");
 		}
@@ -169,7 +177,8 @@ public class Ese103
 		}
 		
 		System.out.print("21b: Verifica implementazione costruttore di Rectangle...");
-		try {
+		try
+		{
 			r = new Rectangle(0, 0, 1, 0);
 			throw new Exception("Errore nell'implementazione di Costruttore");
 		}
@@ -208,7 +217,8 @@ public class Ese103
 		System.out.println("superata");
 		
 		System.out.print("24: Verifica implementazione setXSideLength di Rectangle...");
-		try {
+		try 
+		{
 			r.setXSideLength(-1);
 			throw new Exception("Errore nell'implementazione di setXSideLength");
 		}
@@ -218,7 +228,8 @@ public class Ese103
 		}
 		
 		System.out.print("25: Verifica implementazione setYSideLength di Rectangle...");
-		try {
+		try 
+		{
 			r.setYSideLength(-1);
 			throw new Exception("Errore nell'implementazione di setYSideLength");
 		}
@@ -234,9 +245,10 @@ public class Ese103
 		System.out.println("\n==> Verifica Square");
 		// Verifica di Costruttore Rectangle
 		System.out.print("31: Verifica implementazione costruttore di Square...");
-		try {
+		try
+		{
 			s = new Square(0, 0, 0);
-			// Se viene eseguita l'istruzione successiva, non è stata lanciata l'eccezione
+			// Se viene eseguita l'istruzione successiva, non Ã¨ stata lanciata l'eccezione
 			// per il raggio non positivo. L'implementazione sarebbe errata.
 			throw new Exception("Errore nell'implementazione di Costruttore");
 		}
@@ -279,7 +291,8 @@ public class Ese103
 		System.out.println("superata");
 		
 		System.out.print("34: Verifica implementazione setL di Square...");
-		try {
+		try
+		{
 			s.setL(-1);
 			throw new Exception("Errore nell'implementazione di setL");
 		}
@@ -289,7 +302,8 @@ public class Ese103
 		}
 		
 		System.out.print("35: Verifica implementazione setYSideLength di Square...");
-		try {
+		try 
+		{
 			s.setYSideLength(-1);
 			throw new Exception("Errore nell'implementazione di setYSideLength");
 		}
@@ -299,7 +313,8 @@ public class Ese103
 		}
 		
 		System.out.print("36: Verifica implementazione setXSideLength di Square...");
-		try {
+		try
+		{
 			s.setXSideLength(-1);
 			throw new Exception("Errore nell'implementazione di setXSideLength");
 		}
